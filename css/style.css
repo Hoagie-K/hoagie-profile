@@ -1,0 +1,526 @@
+@charset "utf-8";
+
+#wrap {
+	min-width: 1200px;
+}
+
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+header > .container {
+	position: relative;
+	width: 1024px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+header > .container > nav > .gnb {
+	display: flex;
+	justify-content: space-between;
+	/* width: 816px; */
+}
+
+header > nav > .gnb > li {
+	width: 100px;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+header > .container > nav > .gnb > li > a {
+	display: block;
+	height: 40px;
+	padding: 5px 15px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+
+header > .container > nav > .gnb > li:hover,
+header > .container > nav > .gnb > li > a.on {
+	font-weight: 800;
+}
+
+/* 임시코드 */
+section > .intro ~ article {
+	/* padding: 200px 0;	 */
+}
+
+section > article > .container {
+	display: flex;
+	height: 970px;
+	/* justify-content: center; */
+	/* align-items: center; */
+	/* font-size: 150px; */
+}
+
+section > .aboutMe > .container {
+	/* border: 5px solid blue; */
+}
+
+section > .mnu2 > .container > .hobby > .hoCont > ol > li,
+section > .mnu2 > .container > .hobby > .head,
+section > .mnu1 > .container > .edu > p,
+section > .mnu1 > .container > .workEx > .head,
+section > .mnu1 > .container > .skills > p,
+section > .mnu2 > .container > .interest > .head,
+section > .mnu2 > .container > .specialty > .head {
+	font-size: 20px;
+	font-weight: 800;
+}
+
+/* section > .mnu1 > .container,
+section > .mnu2 > .container,
+section > .mnu3 > .container,
+section > .mnu4 > .container,
+section > .mnu5 > .container {
+	border-right: 5px solid blue;
+	border-left: 5px solid blue;
+}
+
+section > .aboutMe > .container,
+section > .mnu1 > .container {
+	border-bottom: 1px solid blue;
+}
+
+section > .mnu2 > .container {
+	border-right: 5px solid blue;
+	border-left: 5px solid blue;
+	border-bottom: 5px solid blue;
+} */
+
+section > .aboutMe > .container > .frame {
+	display: block;
+	background-image: url(./../images/label.png);
+	width: 60px;
+	height: 200px;
+	background-size: cover;
+	margin: 320px 0 0 350px;
+	text-indent: -9999px;
+}
+
+section > .aboutMe > .container > .headLine {
+	display: block;
+	height: 150px;
+	margin: 400px 250px 0 -40px;
+	font-size: 45px;
+	font-weight: bold;
+	color: #ccc;
+	/* border: 1px solid red; */
+}
+
+section > .aboutMe > .container > .amCont > a {
+	color: #ccc;
+}
+
+section > .aboutMe > .container > .headLine > .style {
+	font-weight: bolder;
+	color: blue;
+}
+
+section > article > .container {
+	background-color: #000;
+}
+
+section > article:nth-child(odd) > .container {
+	/* background-color: #ccc; */
+}
+
+section > article:nth-child(even) > .container {
+	/* background-color: #fff; */
+}
+/* 임시코드 */
+
+section > article {
+	background-color: #fff;
+}
+
+section > .aboutMe > .container > p {
+	font-size: 20px;
+	font-weight: 800;
+	left: 10px;
+}
+
+section > .aboutMe > .container > p > span {
+	color: blue;
+	font-style: italic;
+}
+
+section > article > .container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+section > .mnu1 > .container > .profileImg {
+	display: flex;
+	margin: 60px 0 0 0;
+}
+
+section > .mnu1 > .container > .profileImg > img {
+	width: 350px;
+	height: 470px;
+}
+
+section > .mnu1 > .container > .profileBox1{
+	/* border: 1px solid red; */
+	margin: 60px 10px 0 10px;
+	width: 400px;
+	height: 470px;
+}
+
+section > .mnu1 > .container > .profileBox2	 {
+	/* border: 1px solid red; */
+	margin: 60px 10px 0 10px;
+	width: 400px;
+	height: 470px;
+}
+
+section > .mnu1 > .container > .profileBox3	 {
+	/* border: 1px solid red; */
+	margin: 550px 0 0 -1180px;
+	width: 1150px;
+	height: 400px;
+}
+
+section > .mnu1 > .container > .profileBox1 > .amCont {
+	display: block;
+	margin: 10px 0 0 10px;
+	color: #ccc;
+	/* border: 1px solid red; */
+}
+
+section > .mnu1 > .container > .profileBox1 > .edu {
+	display: block;
+	margin: 10px 0 0 10px;
+	height: 140px;
+	color: #ccc;
+}
+
+section > .mnu1 > .container > .profileBox1 > .specialty {
+	display: block;
+	margin: 10px 0 0 10px;
+	color: #ccc;
+}
+
+section > .mnu1 > .container > .profileBox1 > .interest {
+	margin: 10px 0 0 10px;
+	color: #ccc;
+}
+
+section > .mnu1 > .container > .profileBox1 > .hobby {
+	margin: 10px 0 0 10px;
+	/* border: 1px solid red; */
+	color: #ccc;
+}
+
+section > .mnu1 > .container > .profileBox1 > .hobby > .hoCont {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+section > .mnu1 > .container > .profileBox1 > .hobby > .hoCont > li {
+	background-size: cover;
+	width: 90px;
+	height: 90px;
+	text-indent: -9999px;
+	/* border: 1px solid red; */
+}
+
+section > .mnu1 > .container > .profileBox1 > .hobby > .hoCont > .music {
+	background-image: url(./../images/music.png);
+	margin: 0 10px 0 0;
+}
+
+section > .mnu1 > .container > .profileBox1 > .hobby > .hoCont > .movie {
+	background-image: url(./../images/movie.png);
+	margin: 0 10px 0 0;
+}
+
+section > .mnu1 > .container > .profileBox1 > .hobby > .hoCont > .writing {
+	background-image: url(./../images/writing.png);
+}
+
+section > .mnu1 > .container > .profileBox1 > .hobby > .hoCont > ol {
+	display: flex;
+}
+
+section > .mnu1 > .container > .profileBox1 > .hobby > .hoCont > ol > .pMusic {
+	margin: 0 43px 0 25px;
+}
+
+section > .mnu1 > .container > .profileBox1 > .hobby > .hoCont > ol > .pMovie {
+	margin: 0 35px 0 25px;
+}
+
+section > .mnu1 > .container > .profileBox1 > .hobby > .hoCont > ol > .pWriting {
+	margin: 0 0 0 30px;
+}
+
+section > .mnu1 > .container > .profileBox2 > .workEx {
+	display: block;
+	margin: 10px 0 0 10px;
+	color: #ccc;
+}
+
+section > .mnu1 > .container > .profileBox2 > .workEx > .weCont {
+	display: block;
+	margin: 0 0 0 50px;
+}
+
+section > .mnu1 > .container > .profileBox3 > .skills {
+	display: block;
+	margin: 10px 0 0 10px;
+	width: 400px;
+	height: 250px;
+	/* border: 1px solid red; */
+	color: #ccc;
+}
+
+section > .mnu1 > .container > .profileBox3 > .skills > ul {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 0 22px;
+}
+
+section > .mnu1 > .container > .profileBox3 > .skills > ul > li {
+	background-size: cover;
+	width: 80px;
+	height: 80px;
+	text-indent: -9999px;
+	/* border: 1px solid red; */
+}
+
+section > .mnu1 > .container > .profileBox3 > .skills > ul > .pp {
+	background-image: url(./../images/Powerpoint.png);
+	margin-right: 5px;
+}
+section > .mnu1 > .container > .profileBox3 > .skills > ul > .ex {
+	background-image: url(./../images/Excel.png);
+	margin-right: 5px;
+}
+section > .mnu1 > .container > .profileBox3 > .skills > ul > .ai {
+	background-image: url(./../images/Illustrator.png);
+	margin-right: 5px;
+}
+section > .mnu1 > .container > .profileBox3 > .skills > ul > .ps {
+	background-image: url(./../images/Photoshop.png);
+	margin-top: 3px;
+}
+section > .mnu1 > .container > .profileBox3 > .skills > ul > .js {
+	background-image: url(./../images/JS.png);
+	margin-right: 5px;
+}
+section > .mnu1 > .container > .profileBox3 > .skills > ul > .css {
+	background-image: url(./../images/CSS.png);
+	margin-right: 5px;
+}
+section > .mnu1 > .container > .profileBox3 > .skills > ul > .html {
+	background-image: url(./../images/HTML.png);
+}
+
+section > .mnu1 > .container > .profileBox3 > .skills > ul > .js,
+section > .mnu1 > .container > .profileBox3 > .skills > ul > .css,
+section > .mnu1 > .container > .profileBox3 > .skills > ul > .html {
+	margin-top: 5px;
+	height: 110px;
+}
+
+section > .mnu2 > .container > .text1 > .frame{
+	display: block;
+	background-image: url(./../images/label.png);
+	width: 30px;
+	height: 80px;
+	background-size: cover;
+	margin: 250px 0 0 10px;
+	text-indent: -9999px;
+}
+
+section > .mnu2 > .container > .text2 > .frame{
+	display: block;
+	background-image: url(./../images/label.png);
+	width: 30px;
+	height: 80px;
+	background-size: cover;
+	margin: 250px 0 0 100px;
+	text-indent: -9999px;
+}
+
+section > .mnu2 > .container > .text3 > .frame{
+	display: block;
+	background-image: url(./../images/label.png);
+	width: 30px;
+	height: 80px;
+	background-size: cover;
+	margin: 600px 0 0 -700px;
+	text-indent: -9999px;
+}
+
+section > .mnu2 > .container > .text1 > .prosAndCons {
+	display: block;
+	margin: -40px 0 0 20px;
+	font-size: 35px;
+	color: #ccc;
+	/* border: 1px solid red; */
+}
+
+section > .mnu2 > .container > .text2 > .hashtag {
+	display: block;
+	margin: -40px 0 0 110px;
+	font-size: 35px;
+	color: #ccc;
+	/* border: 1px solid red; */
+}
+
+section > .mnu2 > .container > .text3 > .hashtag {
+	display: block;
+	margin: -40px 0 0 -690px;
+	font-size: 35px;
+	color: #ccc;
+	/* border: 1px solid red; */
+}
+
+section > .mnu2 > .container > .text1 > p{
+	display: block;
+	margin: 10px 0 0 10px;
+	font-size: 15px;
+	color: #ccc;
+}
+
+section > .mnu2 > .container > .text2 > p{
+	display: block;
+	margin: 10px 0 0 110px;
+	font-size: 15px;
+	color: #ccc;
+}
+
+section > .mnu2 > .container > .text3 > p{
+	display: block;
+	margin: 20px 0 0 -690px;
+	font-size: 15px;
+	color: #ccc;
+}
+
+section > .mnu3 > .container,
+section > .mnu4 > .container,
+section > .mnu5 > .container {
+	color: #ccc;
+}
+section > .mnu3 > .container > .headText{
+	text-align: center;
+	margin: 80px 0 0 450px;
+}
+
+section > .mnu4 > .container > .headText{
+	text-align: center;
+	margin: 80px 0 0 420px;
+}
+
+section > .mnu5 > .container > .headText{
+	text-align: center;
+	margin: 80px 0 0 520px;
+}
+
+section > .mnu3 > .container > .headText > h2,
+section > .mnu4 > .container > .headText > h2,
+section > .mnu5 > .container > .headText > h2{
+	font-weight: 800;
+}
+
+section > .mnu3 > .container > .imgFrame{
+	display: flex;
+	width: 500px;
+	height: 500px;
+	margin: 200px 0 0 -650px;
+}
+
+section > .mnu4 > .container > .imgFrame{
+	display: flex;
+	width: 500px;
+	height: 500px;
+	margin: 200px 0 0 -680px;
+}
+
+section > .mnu5 > .container > .imgFrame{
+	display: flex;
+	width: 500px;
+	height: 500px;
+	margin: 200px 0 0 -450px;
+}
+
+section > .mnu3 > .container > .imgFrame > .frame > img,
+section > .mnu4 > .container > .imgFrame > .frame > img,
+section > .mnu5 > .container > .imgFrame > .frame > img{
+	width: 500px;
+}
+
+section > .mnu3 > .container > .cont,
+section > .mnu4 > .container > .cont{
+	width: 700px;
+	margin: 600px 0 0 -350px;
+}
+
+section > .mnu5 > .container > .cont{
+	width: 500px;
+	margin: 600px 0 0 -150px;
+}
+
+footer {
+	margin: 0 auto;
+	width: 1200px;
+	background-color: #000;
+}
+
+footer > .container {
+	position: relative;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 30px 0 20px;
+}
+
+footer > .container > h2,
+footer > .container > .contact,
+footer > .container > .iam_1,
+footer > .container > .iam_2 {
+	padding-left: 30px;
+	color: #ababab;
+	font-size: 13px;
+	line-height: 28px;
+}
+
+footer > .container > .contact > a {
+	margin-right: 20px;
+	color: #ababab;
+}
+
+footer > .container > .contact > .bar {
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	display: block;
+	width: 150px;
+	height: 54px;
+	background-image: url(../images/rwd_footer_img_logo_pc.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+footer > .container > .contact > .bar:hover {
+	background-image: url(../images/rwd_footer_img_logo_pc_on.png);
+}
+
+footer > .container > .contact > .bar:after {
+	display: block;
+	position: absolute;
+	left: -745px;
+	top: 18px;
+	color: #ababab;
+	content: '|';
+}
