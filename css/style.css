@@ -137,7 +137,7 @@ section > article:nth-child(even) > .container {
 /* 임시코드 */
 
 section > article {
-	background-color: #fff;
+	background-color: #000;
 }
 
 section > .aboutMe > .container > p {
@@ -474,7 +474,6 @@ section > .mnu5 > .container > .cont{
 
 footer {
 	margin: 0 auto;
-	width: 1200px;
 	background-color: #000;
 }
 
