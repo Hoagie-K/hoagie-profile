@@ -8,7 +8,7 @@ $(function(){
   arrTopVal[3] = $('.mnu3').offset().top;
   arrTopVal[4] = $('.mnu4').offset().top;
   arrTopVal[5] = $('.mnu5').offset().top;
-  // arrTopVal[6] = $('.mnu6').offset().top;
+  arrTopVal[6] = $('.mnu6').offset().top;
 
   console.log('arrTopVal =',arrTopVal);
 
@@ -69,6 +69,11 @@ $(function(){
       }
 
       else if(scroll >= 5460 && scroll < 6250){
+        $('.gnb>li>a').css('font-weight', '500');
+        $('.gnb>li:nth-of-type(7)>a').css('font-weight', '800');
+      }
+
+      else if(scroll >= 6250 && scroll < 7220){
         $('.gnb>li>a').css('font-weight', '500');
         $('.gnb>li:nth-of-type(7)>a').css('font-weight', '800');
       }

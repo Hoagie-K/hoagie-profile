@@ -410,7 +410,8 @@ section > .mnu2 > .container > .text3 > p{
 
 section > .mnu3 > .container,
 section > .mnu4 > .container,
-section > .mnu5 > .container {
+section > .mnu5 > .container,
+section > .mnu6 > .container {
 	color: #ccc;
 }
 section > .mnu3 > .container > .headText{
@@ -428,9 +429,15 @@ section > .mnu5 > .container > .headText{
 	margin: 80px 0 0 520px;
 }
 
+section > .mnu6 > .container > .headText{
+	text-align: center;
+	margin: 80px 0 0 520px;
+}
+
 section > .mnu3 > .container > .headText > h2,
 section > .mnu4 > .container > .headText > h2,
-section > .mnu5 > .container > .headText > h2{
+section > .mnu5 > .container > .headText > h2,
+section > .mnu6 > .container > .headText > h2{
 	font-weight: 800;
 }
 
@@ -455,6 +462,13 @@ section > .mnu5 > .container > .imgFrame{
 	margin: 200px 0 0 -450px;
 }
 
+section > .mnu6 > .container > .imgFrame{
+	display: flex;
+	width: 800px;
+	height: 500px;
+	margin: 200px 0 0 -530px;
+}
+
 section > .mnu3 > .container > .imgFrame > .frame > img,
 section > .mnu4 > .container > .imgFrame > .frame > img,
 section > .mnu5 > .container > .imgFrame > .frame > img{
@@ -470,6 +484,11 @@ section > .mnu4 > .container > .cont{
 section > .mnu5 > .container > .cont{
 	width: 500px;
 	margin: 600px 0 0 -150px;
+}
+
+section > .mnu6 > .container > .cont{
+	width: 700px;
+	margin: 750px 0 0 -580px;
 }
 
 footer {
