@@ -194,6 +194,20 @@ section > .mnu1 > .container > .profileBox1 > .amCont {
 	/* border: 1px solid red; */
 }
 
+section > .mnu1 > .container > .profileBox1 > .amCont > a:link,
+section > .mnu1 > .container > .profileBox1 > .amCont > a:visited{
+	color: #ccc;
+}
+
+section > .mnu1 > .container > .profileBox1 > .amCont > a:hover{
+	color:#ccc;
+	font-weight: 800;
+}
+
+section > .mnu1 > .container > .profileBox1 > .amCont > a:active{
+	color:purple;
+}
+
 section > .mnu1 > .container > .profileBox1 > .edu {
 	display: block;
 	margin: 10px 0 0 10px;

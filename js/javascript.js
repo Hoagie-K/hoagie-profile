@@ -78,4 +78,18 @@ $(function(){
         $('.gnb>li:nth-of-type(7)>a').css('font-weight', '800');
       }
     });
+
+    function copyToClipboard(val) {
+      var t = document.createElement("textarea");
+      document.body.appendChild(t);
+      t.value = val;
+      t.select();
+      document.execCommand('copy');
+      document.body.removeChild(t);
+      }
+  
+      $('.emailLink').click(function() {
+        copyToClipboard('hsvk4@naver.com');
+        alert('주소를 복사하였습니다');
+      });
 });
