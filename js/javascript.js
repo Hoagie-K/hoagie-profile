@@ -88,8 +88,188 @@ $(function(){
       document.body.removeChild(t);
       }
   
-      $('.emailLink').click(function() {
+      $('.link').click(function() {
         copyToClipboard('hsvk4@naver.com');
         alert('주소를 복사하였습니다');
       });
+});
+
+$(function(){
+
+  const $indicator = $('#screen>.slides-pagination>li>a');
+  const $container = $('#screen>.imgFrame');
+  const $btnPrev = $('#screen>.slides-nav.slides-prev');
+  const $btnNext = $('#screen>.slides-nav.slides-next');
+
+  let nowIdx = 0;
+
+  const slideFn = function(){
+    $container.stop().animate({
+      left : -(100 * nowIdx)+'%'
+    });    
+    $indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
+    };
+  
+    $indicator.on('click', function(evt){
+     evt.preventDefault();
+
+     nowIdx = $indicator.index(this);
+     slideFn();
+   });
+
+    $btnPrev.on('click', function(evt){
+      evt.preventDefault();
+      if(nowIdx>0){
+        nowIdx--;
+      }else{
+        nowIdx=9;
+      }
+      slideFn();
+    });      
+      
+    $btnNext.on('click', function(evt){
+      evt.preventDefault();
+      if(nowIdx<9){
+        nowIdx++;
+      }else{
+        nowIdx=0;
+      }
+      slideFn();
+    });
+
+    const slidePC = [
+      'images/busan_university_proposal01.png',
+      'images/busan_university_proposal02.png',
+      'images/busan_university_proposal03.png',
+      'images/busan_university_proposal04.png',
+      'images/busan_university_proposal05.png',
+      'images/busan_university_proposal06.png',
+      'images/busan_university_proposal07.png',
+      'images/busan_university_proposal08.png',
+      'images/busan_university_proposal09.png',
+      'images/busan_university_proposal10.png'
+    ];
+
+    const slideMO = [
+      'images/busan_university_proposal01.png',
+      'images/busan_university_proposal02.png',
+      'images/busan_university_proposal03.png',
+      'images/busan_university_proposal04.png',
+      'images/busan_university_proposal05.png',
+      'images/busan_university_proposal06.png',
+      'images/busan_university_proposal07.png',
+      'images/busan_university_proposal08.png',
+      'images/busan_university_proposal09.png',
+      'images/busan_university_proposal10.png'
+    ];
+
+    $(window).on('load resize', function(){
+      
+      const $slideImg = $('#screen>ul>li>a>img');
+  
+      if($(window).width()<=768){
+        for(let i=0;i<10;i++){
+          $slideImg.eq(i).attr({
+            src : slideMO[i]
+          });
+        }
+      }else{
+        for(let i=0;i<10;i++){
+          $slideImg.eq(i).attr({
+            src : slidePC[i]
+          });
+        }
+      }     
+  
+  });
+});
+
+$(function(){
+
+  const $indicator = $('#screen2>.slides-pagination>li>a');
+  const $container = $('#screen2>.imgFrame');
+  const $btnPrev = $('#screen2>.slides-nav.slides-prev');
+  const $btnNext = $('#screen2>.slides-nav.slides-next');
+
+  let nowIdx = 0;
+
+  const slideFn = function(){
+    $container.stop().animate({
+      left : -(100 * nowIdx)+'%'
+    });    
+    $indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
+    };
+  
+    $indicator.on('click', function(evt){
+     evt.preventDefault();
+
+     nowIdx = $indicator.index(this);
+     slideFn();
+   });
+
+    $btnPrev.on('click', function(evt){
+      evt.preventDefault();
+      if(nowIdx>0){
+        nowIdx--;
+      }else{
+        nowIdx=9;
+      }
+      slideFn();
+    });      
+      
+    $btnNext.on('click', function(evt){
+      evt.preventDefault();
+      if(nowIdx<9){
+        nowIdx++;
+      }else{
+        nowIdx=0;
+      }
+      slideFn();
+    });
+
+    const slidePC = [
+      'images/Reader&Leader_proposal01.png',
+      'images/Reader&Leader_proposal02.png',
+      'images/Reader&Leader_proposal03.png',
+      'images/Reader&Leader_proposal04.png',
+      'images/Reader&Leader_proposal05.png',
+      'images/Reader&Leader_proposal06.png',
+      'images/Reader&Leader_proposal07.png',
+      'images/Reader&Leader_proposal08.png',
+      'images/Reader&Leader_proposal09.png',
+      'images/Reader&Leader_proposal10.png'
+    ];
+
+    const slideMO = [
+      'images/Reader&Leader_proposal01.png',
+      'images/Reader&Leader_proposal02.png',
+      'images/Reader&Leader_proposal03.png',
+      'images/Reader&Leader_proposal04.png',
+      'images/Reader&Leader_proposal05.png',
+      'images/Reader&Leader_proposal06.png',
+      'images/Reader&Leader_proposal07.png',
+      'images/Reader&Leader_proposal08.png',
+      'images/Reader&Leader_proposal09.png',
+      'images/Reader&Leader_proposal10.png'
+    ];
+
+    $(window).on('load resize', function(){
+      
+      const $slideImg = $('#screen2>ul>li>a>img');
+  
+      if($(window).width()<=768){
+        for(let i=0;i<10;i++){
+          $slideImg.eq(i).attr({
+            src : slideMO[i]
+          });
+        }
+      }else{
+        for(let i=0;i<10;i++){
+          $slideImg.eq(i).attr({
+            src : slidePC[i]
+          });
+        }
+      }     
+  
+  });
 });
